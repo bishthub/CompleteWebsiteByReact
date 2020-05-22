@@ -30,7 +30,7 @@ const StripeCheckoutButton = ({ price }) => {
       name='Bishtji Services Ltd.'
       billingAddress
       shippingAddress
-      image='https://svgshare.com/i/CUz.svg'
+      image='https://svgshare.com/i/LNK.svg'
       description={`Your total is ₹${price}`}
       amount={priceForStripe}
       currency ="INR"
