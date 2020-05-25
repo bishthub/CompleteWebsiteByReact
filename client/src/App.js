@@ -15,6 +15,8 @@ import Header from './components/header/header.component';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
 import { GlobalStyle } from './global.styles';
+import AboutusPage from './pages/aboutus/aboutus.component';
+import FooterPage from './components/footer/footer.component';
 
 const App = ({ checkUserSession,currentUser }) => {
   useEffect(() => {
@@ -43,6 +45,7 @@ const App = ({ checkUserSession,currentUser }) => {
               )
             }
           />
+          <Route exact path='/aboutus' component={AboutusPage}/>
         </Switch>
       </div>
     );

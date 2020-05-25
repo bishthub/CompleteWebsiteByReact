@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { fetchCollectionsStart } from '../../redux/shop/shop.actions';
-
+import FooterPage from '../../components/footer/footer.component';
 import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
 import CollectionPageContainer from '../collection/collection.container';
 
@@ -22,6 +22,7 @@ const ShopPage =({fetchCollectionsStart, match}) => {
           path={`${match.path}/:collectionId`}
           component={CollectionPageContainer}
         />
+        <FooterPage/>
       </div>
     );
   }

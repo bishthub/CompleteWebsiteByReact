@@ -26,7 +26,7 @@ const StripeCheckoutButton = ({ price }) => {
 
   return (
     <StripeCheckout
-      label='Pay Now'
+      label='Pay Later'
       name='Bishtji Services Ltd.'
       billingAddress
       shippingAddress

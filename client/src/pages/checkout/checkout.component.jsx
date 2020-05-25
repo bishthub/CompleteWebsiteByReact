@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 
@@ -17,6 +16,9 @@ import {
   TotalContainer,
   WarningContainer
 } from './checkout.styles';
+import MyComponent from '../../components/pay-now/pay-now.component';
+import FooterPage from '../../components/footer/footer.component';
+
 
 const CheckoutPage = ({ cartItems, total }) => (
   <CheckoutPageContainer>
@@ -42,12 +44,17 @@ const CheckoutPage = ({ cartItems, total }) => (
     ))}
     <TotalContainer>TOTAL: ₹{total}.00</TotalContainer>
     <WarningContainer>
-      *Please use the following test credit card for payments*
+      *After pressing Pay Now you will be redirected to the payment gateway so pay exact amount to avoid any confusions.*
       <br />
-      4242 4242 4242 4242 - Exp: 01/22 - CVV: 123
+      If you dont want to pay before contacting then tap on the left button and enter test card details i.e 4242-4242-4242-4242 Exp-01/24 CVV-123
     </WarningContainer>
+    <div className="Modiji">
     <StripeCheckoutButton price={total} />
+    <MyComponent />
+    </div>
+    <FooterPage/>
   </CheckoutPageContainer>
+  
 );
 
 const mapStateToProps = createStructuredSelector({

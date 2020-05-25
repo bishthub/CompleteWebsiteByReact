@@ -32,6 +32,10 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  a {
+  text-decoration: none;
+  color: black;
+}
 
   @media screen and (max-width:800px) {
     width:80%;

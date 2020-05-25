@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import CustomButton from '../custom-button/custom-button.component';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const CollectionItemContainer = styled.div`
   width: 22vw;

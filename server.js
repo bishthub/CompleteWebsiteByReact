@@ -32,8 +32,8 @@ app.post('/payment',(req,res)=> {
     const body = {
         source: req.body.token.id,
         amount: req.body.amount,
-        currency: 'usd',
-        description: 'Learning React'
+        currency: 'inr',
+        description: "req.body."
     };
 
     stripe.charges.create(body, (stripeErr,stripeRes) => {

@@ -14,20 +14,20 @@ const INITIAL_STATE = {
     },
     {
       title: 'Youtube',
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+      imageUrl: 'https://i.ibb.co/0DtC19y/carry-yt.jpg',
       id: 3,
       linkUrl: 'shop/youtube%20services'
     },
     {
       title: 'Pubg Services',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+      imageUrl: 'https://i.ibb.co/DrTdR8W/pubgB.jpg',
       size: 'large',
       id: 4,
       linkUrl: 'shop/pubg%20services'
     },
     {
       title: 'COC ACCOUNTS',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+      imageUrl: 'https://clashofclans.com/uploaded-images/_1440x847_crop_center-center_90/CoC_Blog_Announcement_20160429.jpg?mtime=20160429082539',
       size: 'large',
       id: 5,
       linkUrl: 'shop/clash%20of%20clans%20accounts'
