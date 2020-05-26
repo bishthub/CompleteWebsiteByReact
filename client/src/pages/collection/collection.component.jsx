@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 import CollectionItem from '../../components/collection-item/collection-item.component';
 import { selectCollection } from '../../redux/shop/shop.selectors';
-import FooterPage from '../../components/footer/footer.component';
 import {
   CollectionPageContainer,
   CollectionTitle,
@@ -21,7 +20,7 @@ const CollectionPage = ({ collection }) => {
           <CollectionItem key={item.id} item={item} />
         ))}
       </CollectionItemsContainer>
-      <FooterPage/>
+      
     </CollectionPageContainer>
   );
 };
