@@ -97,7 +97,7 @@ function Example(flag) {
     <CollectionItemContainer>
       <BackgroundImage className='image' imageUrl={imageUrl} />
       <CollectionFooterContainer>
-        <NameContainer onClick={() => this.handlePopup()}>{name}</NameContainer>
+        <NameContainer >{name}</NameContainer>
         <PriceContainer>₹{price}</PriceContainer>
       </CollectionFooterContainer>
       <AddButton onClick={() => addItem(item)} inverted>

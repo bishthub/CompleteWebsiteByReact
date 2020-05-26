@@ -20,7 +20,7 @@ const StripeCheckoutButton = ({ price,clearCart }) => {
         token
       }
     }).then((response) => {
-      alert("Payment successful")
+      alert("Payment successful, we will contact you ASAP.")
       clearCart();
  
     }).catch(error => {
