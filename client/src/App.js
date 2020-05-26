@@ -17,6 +17,7 @@ import { checkUserSession } from './redux/user/user.actions';
 import { GlobalStyle } from './global.styles';
 import AboutusPage from './pages/aboutus/aboutus.component';
 import FooterPage from './components/footer/footer.component';
+import FormPage from './pages/Form/form.component';
 
 const App = ({ checkUserSession,currentUser }) => {
   useEffect(() => {
@@ -45,7 +46,8 @@ const App = ({ checkUserSession,currentUser }) => {
               )
             }
           />
-          <Route exact path='/aboutus' component={AboutusPage}/>
+          <Route exact path='/aboutme' component={AboutusPage}/>
+          <Route exact path="/form" component={FormPage}/>
         </Switch>
       </div>
     );

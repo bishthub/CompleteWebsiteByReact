@@ -5,8 +5,8 @@ import FooterPage from "../footer/footer.component";
 const Aboutus = ({}) => (
     <div>
     <div class="about-section">
-  <h1>About Us Page</h1>
-  <p>Looking to increase social attention? Want an gaming account ?</p>
+  <h1>THE SOCIAL STORE</h1>
+  <p>Looking to increase social attention? Want a gaming account ?</p>
   <p>You have come to the right place 😎😎</p>
 </div>
 <h2>Why Choose Us?</h2>
@@ -23,8 +23,8 @@ const Aboutus = ({}) => (
         <p class="title">Founder & Designer</p>
         <p>Just an IT engineering trying to learn how to make websites using React.Also a Trusted seller from last three years.</p>
         <br/>
-        <p>bishtjisop@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <p className="title">Mobile Number - +91 8130370386</p>
+        <p><button class="button"><a className="contactme" href="mailto:bishtjisop@gmail.com">Contact</a></button></p>
       </div>
     </div>
   </div>
